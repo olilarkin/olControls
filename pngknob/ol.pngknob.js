@@ -22,8 +22,8 @@ var img = new Image(); // create a new Image
 var frames; // number of frames in the stitched image
 var frameHeight = img.size[1]/frames;
 var yoffset = 0; // the y offset for the current frame
-//var brgb = [1.,1.,1.,1.];
-//var frgb = [0.,0.,0.,0.];
+var brgb = [1.,1.,1.,0.];
+var frgb = [0.,0.,0.,1.];
 var pos = 0; // 0-1 for position of knob
 var last_x = 0;
 var last_y = 0;
@@ -39,8 +39,8 @@ var font = "Arial";
 var fontsize = 10;
 var width, height;
 
-//declareattribute("brgb", null, "setbrgb", 1); 
-//declareattribute("frgb", null, "setfrgb", 1); 
+declareattribute("brgb", null, "setbrgb", 1); 
+declareattribute("frgb", null, "setfrgb", 1); 
 declareattribute("readout", null, "setreadout", 1);
 declareattribute("type", null, "settype", 1);
 declareattribute("font",null,"setfont",1);
@@ -71,20 +71,27 @@ function paint()
 
 	with(mgraphics)
 	{
+		save();
+		set_source_rgba(brgb);	
+		rectangle(0, 0, width, height);
+		fill();
+		restore();
+		
+		save();
+		image_surface_draw(img, [0, yoffset,img.size[0],frameHeight], [0, 0,img.size[0],frameHeight] );
+		restore();
 		
 		if(readout)
 		{
 			select_font_face(font);
 			set_font_size(fontsize);
-			//set_source_rgba(frgb);			
+			set_source_rgba(frgb);			
 			move_to((img.size[0]/2) - text_measure(str)[0] / 2 ,frameHeight+text_measure(str)[1]);
 			text_path(str);
 			fill();
 		}
 
-		//save();
-		image_surface_draw(img, [0, yoffset,img.size[0],frameHeight], [0, 0,img.size[0],frameHeight] );
-		//restore();
+
 	}		
 
 }
@@ -145,19 +152,17 @@ function notifydeleted()
 }
 notifydeleted.setlocal = 1;
 
-// function setbrgb(r,g,b,a) 
-// {
-// 	brgb = [r,g,b,a];
-// 	mgraphics.redraw();
-// }
-// setbrgb.local = 1;
+function setbrgb(r,g,b,a) 
+{
+	brgb = [r,g,b,a];
+	mgraphics.redraw();
+}
 
-// function setfrgb(r,g,b,a) 
-// {
-// 	frgb = [r,g,b,a];
-// 	mgraphics.redraw();
-// }
-// setfrgb.local = 1;
+function setfrgb(r,g,b,a) 
+{
+	frgb = [r,g,b,a];
+	mgraphics.redraw();
+}
 
 function settype(v)
 {

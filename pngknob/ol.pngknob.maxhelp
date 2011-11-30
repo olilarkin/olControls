@@ -7,7 +7,7 @@
 			"revision" : 2
 		}
 ,
-		"rect" : [ 58.0, 174.0, 719.0, 645.0 ],
+		"rect" : [ 716.0, 158.0, 752.0, 747.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,23 +28,25 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"bgcolor" : [ 0.666667, 0.666667, 0.666667, 0.0 ],
-					"border" : 2,
-					"bordercolor" : [ 0.835766, 0.835766, 0.835766, 1.0 ],
-					"id" : "obj-37",
-					"ignoreclick" : 1,
-					"maxclass" : "panel",
+					"border" : 0,
+					"embedstate" : [ [ "vreset", 50 ], [ "vmax", 100 ], [ "frgb", 1, 1, 1, 1 ], [ "brgb", 0.192157, 0.682353, 0.580392, 1 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 1 ] ],
+					"filename" : "ol.pngknob.js",
+					"id" : "obj-38",
+					"jsarguments" : [ "knob1-60.png", 60 ],
+					"maxclass" : "jsui",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 411.0, 93.0, 238.333328, 83.0 ],
-					"rounded" : 15
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 361.0, 636.0, 48.0, 68.0 ],
+					"presentation_rect" : [ 55.5, 508.0, 48.0, 68.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 0 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 0 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-36",
 					"jsarguments" : [ "knob4-100.png", 100 ],
@@ -53,7 +55,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 556.5, 105.0, 60.0, 60.0 ],
+					"patching_rect" : [ 190.833344, 602.0, 60.0, 60.0 ],
 					"presentation_rect" : [ 520.5, 108.0, 60.0, 60.0 ]
 				}
 
@@ -61,7 +63,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 0 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 0 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-35",
 					"jsarguments" : [ "knob4-100.png", 100 ],
@@ -70,7 +72,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 488.0, 105.0, 60.0, 60.0 ],
+					"patching_rect" : [ 122.333336, 602.0, 60.0, 60.0 ],
 					"presentation_rect" : [ 454.5, 108.0, 60.0, 60.0 ]
 				}
 
@@ -78,7 +80,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 1, 1, 1, 1 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 1 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-33",
 					"jsarguments" : [ "knob4-100.png", 100 ],
@@ -87,15 +89,15 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 418.5, 105.0, 60.0, 60.0 ],
-					"presentation_rect" : [ 512.5, 424.0, 60.0, 60.0 ]
+					"patching_rect" : [ 53.833336, 602.0, 60.0, 80.0 ],
+					"presentation_rect" : [ 512.5, 424.0, 60.0, 80.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 0 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 0 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-32",
 					"jsarguments" : [ "knob3-63.png", 63 ],
@@ -112,7 +114,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 0 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 0 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-31",
 					"jsarguments" : [ "knob3-63.png", 63 ],
@@ -129,7 +131,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 0 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 0 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-23",
 					"jsarguments" : [ "knob3-63.png", 63 ],
@@ -151,7 +153,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 426.0, 478.0, 20.0, 20.0 ]
+					"patching_rect" : [ 361.0, 477.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -172,7 +174,7 @@
 							"revision" : 2
 						}
 ,
-						"rect" : [ 40.0, 55.0, 265.0, 281.0 ],
+						"rect" : [ 40.0, 55.0, 453.0, 333.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -234,11 +236,11 @@
 									"fontsize" : 11.595187,
 									"id" : "obj-3",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
+									"numinlets" : 4,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 26.0, 186.0, 175.0, 20.0 ],
-									"text" : "pack i i i"
+									"patching_rect" : [ 26.0, 186.0, 75.0, 20.0 ],
+									"text" : "pack i i i 255"
 								}
 
 							}
@@ -602,18 +604,18 @@
 						"dependency_cache" : [  ]
 					}
 ,
-					"patching_rect" : [ 426.0, 512.0, 111.0, 21.0 ],
+					"patching_rect" : [ 361.0, 515.0, 111.0, 21.0 ],
 					"saved_object_attributes" : 					{
+						"default_fontface" : 0,
+						"fontname" : "Arial",
 						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
+						"globalpatchername" : "",
 						"tags" : "",
 						"default_fontsize" : 10.0,
-						"globalpatchername" : "",
-						"description" : "",
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0
+						"description" : ""
 					}
 ,
 					"text" : "p mood_machine"
@@ -733,7 +735,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 0 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 0 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-18",
 					"jsarguments" : [ "knob2-100.png", 100 ],
@@ -750,7 +752,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 0 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 0 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-20",
 					"jsarguments" : [ "knob2-100.png", 100 ],
@@ -767,7 +769,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 0 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 0 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-21",
 					"jsarguments" : [ "knob2-100.png", 100 ],
@@ -784,7 +786,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 0 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 0 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-16",
 					"jsarguments" : [ "knob2-100.png", 100 ],
@@ -801,7 +803,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 0 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 0 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-15",
 					"jsarguments" : [ "knob2-100.png", 100 ],
@@ -818,7 +820,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 1 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 1 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 1 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-14",
 					"jsarguments" : [ "knob1-60.png", 60 ],
@@ -835,7 +837,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 1 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 1 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 1 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-13",
 					"jsarguments" : [ "knob1-60.png", 60 ],
@@ -844,7 +846,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 400.5, 328.0, 48.0, 68.0 ],
+					"patching_rect" : [ 396.833344, 328.0, 48.0, 68.0 ],
 					"presentation_rect" : [ 384.0, 186.0, 48.0, 68.0 ]
 				}
 
@@ -852,7 +854,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 1 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 1 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 1 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-12",
 					"jsarguments" : [ "knob1-60.png", 60 ],
@@ -861,7 +863,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 348.0, 328.0, 48.0, 68.0 ],
+					"patching_rect" : [ 344.333344, 328.0, 48.0, 68.0 ],
 					"presentation_rect" : [ 331.0, 186.0, 48.0, 68.0 ]
 				}
 
@@ -869,7 +871,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 1 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 1 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 1 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-10",
 					"jsarguments" : [ "knob1-60.png", 60 ],
@@ -878,7 +880,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 300.0, 328.0, 48.0, 68.0 ],
+					"patching_rect" : [ 297.333344, 328.0, 48.0, 68.0 ],
 					"presentation_rect" : [ 285.0, 189.0, 48.0, 68.0 ]
 				}
 
@@ -886,7 +888,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 1 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 1 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 1 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-7",
 					"jsarguments" : [ "knob1-60.png", 60 ],
@@ -895,7 +897,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 246.0, 328.0, 48.0, 68.0 ],
+					"patching_rect" : [ 243.333344, 328.0, 48.0, 68.0 ],
 					"presentation_rect" : [ 228.5, 188.0, 48.0, 68.0 ]
 				}
 
@@ -903,7 +905,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 1 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 1 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 1 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-6",
 					"jsarguments" : [ "knob1-60.png", 60 ],
@@ -912,7 +914,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 193.5, 328.0, 48.0, 68.0 ],
+					"patching_rect" : [ 190.833344, 328.0, 48.0, 68.0 ],
 					"presentation_rect" : [ 179.5, 190.0, 48.0, 68.0 ]
 				}
 
@@ -920,7 +922,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 0 ], [ "vmax", 1 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 0 ] ],
+					"embedstate" : [ [ "vreset", 0 ], [ "vmax", 1 ], [ "frgb", 0, 0, 0, 0 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 0 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-1",
 					"jsarguments" : [ "knob2-100.png", 100 ],
@@ -1019,7 +1021,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"embedstate" : [ [ "vmin", 0 ], [ "vreset", 50 ], [ "vmax", 100 ], [ "type", 1 ], [ "fontsize", 10 ], [ "font", "Arial" ], [ "readout", 1 ] ],
+					"embedstate" : [ [ "vreset", 50 ], [ "vmax", 100 ], [ "frgb", 0, 0, 0, 1 ], [ "brgb", 1, 1, 1, 0 ], [ "vmin", 0 ], [ "type", 1 ], [ "font", "Arial" ], [ "fontsize", 10 ], [ "readout", 1 ] ],
 					"filename" : "ol.pngknob.js",
 					"id" : "obj-130",
 					"jsarguments" : [ "knob1-60.png", 60 ],
@@ -1049,7 +1051,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.407843, 0.709804, 0.101961, 1.0 ],
+					"bgcolor" : [ 0.192157, 0.682353, 0.580392, 1.0 ],
 					"grad1" : [ 0.0, 0.096331, 0.929412, 1.0 ],
 					"grad2" : [ 0.8995, 0.899114, 0.989796, 1.0 ],
 					"id" : "obj-5",
@@ -1079,21 +1081,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.030612, 0.030612, 0.030612, 1.0 ],
-					"grad1" : [ 0.368613, 0.368613, 0.368613, 1.0 ],
-					"grad2" : [ 0.092732, 0.092692, 0.102041, 1.0 ],
-					"id" : "obj-34",
-					"ignoreclick" : 1,
-					"maxclass" : "panel",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 400.5, 71.0, 261.0, 118.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"attr" : "bgcolor",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -1103,6 +1090,64 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.0, 439.0, 150.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "frgb",
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-39",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 400.5, 590.0, 249.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.666667, 0.666667, 0.666667, 0.0 ],
+					"border" : 2,
+					"bordercolor" : [ 0.835766, 0.835766, 0.835766, 1.0 ],
+					"id" : "obj-37",
+					"ignoreclick" : 1,
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 44.666672, 590.0, 215.333328, 96.0 ],
+					"rounded" : 15
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.030612, 0.030612, 0.030612, 1.0 ],
+					"grad1" : [ 0.368613, 0.368613, 0.368613, 1.0 ],
+					"grad2" : [ 0.092732, 0.092692, 0.102041, 1.0 ],
+					"id" : "obj-34",
+					"ignoreclick" : 1,
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 37.0, 568.0, 233.0, 128.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "brgb",
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-41",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 361.0, 558.0, 330.0, 20.0 ]
 				}
 
 			}
@@ -1181,6 +1226,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1208,10 +1262,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-130", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-41", 0 ]
 				}
 
 			}
