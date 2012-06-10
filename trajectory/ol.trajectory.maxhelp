@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 751.0, 166.0, 745.0, 597.0 ],
+		"rect" : [ 751.0, 166.0, 568.0, 576.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -30,6 +30,20 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 389.0, 448.0, 150.0, 34.0 ],
+					"text" : "shift click in edit mode to add/remove a point"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -48,7 +62,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 231.0, 130.0, 150.0, 20.0 ],
-					"presentation_rect" : [ 231.0, 130.0, 0.0, 0.0 ],
 					"text" : "int jumps"
 				}
 
@@ -76,8 +89,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 149.0, 535.0, 50.0, 20.0 ],
-					"presentation_rect" : [ 154.0, 536.0, 0.0, 0.0 ]
+					"patching_rect" : [ 149.0, 535.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -185,7 +197,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 71.0, 171.0, 55.0, 20.0 ],
-					"restore" : [ 11, 0.75, 0.7, 0.25, 0.25, 0.5, 0.1, 0.7, 0.7, 0.904, 0.292, 0.676, 0.236, 0.396, 0.580247, 0.424, 0.773663, 0.696, 0.831276, 0.84, 0.777778, 0.848, 0.567901 ],
+					"restore" : [ 11, 0.75, 0.7, 0.25, 0.25, 0.5, 0.1, 0.7, 0.7, 0.824, 0.374486, 0.7, 0.246914, 0.396, 0.580247, 0.424, 0.773663, 0.696, 0.831276, 0.84, 0.777778, 0.848, 0.567901 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -219,7 +231,7 @@
 			}
 , 			{
 				"box" : 				{
-					"embedstate" : [ [ "linewidth", 1 ], [ "n_vert_segments", 3 ], [ "n_horiz_segments", 3 ], [ "frgb", 1, 0, 0, 1 ], [ "grgb", 0, 0, 0, 0.2 ] ],
+					"embedstate" : [ [ "grgb", 0, 0, 0, 0.2 ], [ "n_vert_segments", 3 ], [ "linewidth", 1 ], [ "n_horiz_segments", 3 ], [ "frgb", 1, 0, 0, 1 ] ],
 					"filename" : "ol.trajectory.js",
 					"id" : "obj-13",
 					"maxclass" : "jsui",
@@ -241,7 +253,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 22.0, 705.0, 30.0 ],
+					"patching_rect" : [ 24.0, 22.0, 512.0, 30.0 ],
 					"text" : "ol.trajectory.js",
 					"varname" : "autohelp_top_title"
 				}
@@ -255,7 +267,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 54.0, 705.0, 21.0 ],
+					"patching_rect" : [ 24.0, 54.0, 512.0, 21.0 ],
 					"text" : "simple way to record a trajectory and dump it in pattr",
 					"varname" : "autohelp_top_digest"
 				}
@@ -272,7 +284,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 19.0, 709.0, 60.0 ],
+					"patching_rect" : [ 19.0, 19.0, 516.0, 60.0 ],
 					"varname" : "autohelp_top_panel"
 				}
 

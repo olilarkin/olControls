@@ -349,7 +349,7 @@ function iterate(ary)
 		{
 			mgraphics.set_source_rgba(sirgb);
 			y1 = (texty + bgoffset - vrowsize + 2);
-			mgraphics.rectangle(0, y1, width, vrowsize);
+			mgraphics.rectangle(0, y1, width, vrowsize-1);
 			mgraphics.fill();
 		}
 		
