@@ -38,11 +38,14 @@ declareattribute("grgb", null, null, 1);
 var linewidth = 1;
 declareattribute("linewidth", null, null, 1);
 
-var n_horiz_segments = 3;
-declareattribute("n_horiz_segments", null, null, 1);
+var hsegs = 3;
+declareattribute("hsegs", null, null, 1);
 
-var n_vert_segments = 3;
-declareattribute("n_vert_segments", null, null, 1);
+var vsegs = 3;
+declareattribute("vsegs", null, null, 1);
+
+var snap = false;
+declareattribute("snap", null, null, 0);
 
 var gCursor = new bpObj(0.5,0.5);
 
@@ -120,11 +123,11 @@ function draw_grid()
     set_line_width(1);
     set_source_rgba(grgb);
 
-    if(n_horiz_segments)
+    if(hsegs)
     {
-      var xstep = gWidth / n_horiz_segments;
+      var xstep = gWidth / hsegs;
       
-      for(i = 1; i < n_horiz_segments; i++)
+      for(i = 1; i < hsegs; i++)
       {
         move_to(i * xstep, 0);
         line_to(i * xstep, gHeight);
@@ -133,11 +136,11 @@ function draw_grid()
       stroke();
     }
     
-    if(n_vert_segments)
+    if(vsegs)
     {
-      var ystep = gHeight / n_vert_segments;
+      var ystep = gHeight / vsegs;
       
-      for(i = 1; i < n_vert_segments; i++)
+      for(i = 1; i < vsegs; i++)
       {
         move_to(0, i * ystep);
         line_to(gWidth, i * ystep);
@@ -183,6 +186,19 @@ function paint()
         fill();
       }
     }
+    
+    // draw hit circle
+    
+    if(gHit > -1)
+    {
+      ellipse(gData[gHit-1].x * gWidth - gBallRadius - 5, gData[gHit-1].y * gHeight - gBallRadius - 5, gBallDiameter + 10, gBallDiameter + 10);
+      stroke();
+    }
+    
+//    var bounds = getbounds();
+//    rectangle(bounds[0]*gWidth, bounds[1]*gHeight, bounds[2]*gWidth, bounds[3]*gHeight);
+//    stroke();
+    
     //draw cursor
     
     set_line_width(4);
@@ -220,8 +236,15 @@ function ondrag(x,y,but,cmd,shift,capslock,option,ctrl)
     
     if(gMode == kModeEdit && gDragging > -1)
     {
-      gData[gDragging].x = x;
-      gData[gDragging].y = y;
+      var pos = [x,y];
+      
+      if(snap)
+      {
+        pos = nearestintersection(x, y);
+      }
+      
+      gData[gDragging].x = pos[0];
+      gData[gDragging].y = pos[1];
       notifyclients();
     }
   }
@@ -234,6 +257,11 @@ function ondrag(x,y,but,cmd,shift,capslock,option,ctrl)
   mgraphics.redraw();
 }
 ondrag.local = 1; 
+
+function addbp(x, y)
+{
+  gData[gData.length] = new bpObj(x, y);
+}
 
 function onclick(x,y,but,cmd,shift,capslock,option,ctrl)
 {
@@ -251,28 +279,35 @@ function onclick(x,y,but,cmd,shift,capslock,option,ctrl)
         {
           x = clip(x / gWidth, 0., 1.);
           y = clip(y / gHeight, 0., 1.);
-          gData[gData.length] = new bpObj(x,y);
+          
+          var pos = [x, y];
+
+          if(snap)
+          {
+            pos = nearestintersection(x, y);
+          }
+          
+          addbp(x,y);
         }
+        
+        gHit = -1;
+        gDragging = -1;
         notifyclients();
         mgraphics.redraw();
       }
-      
-      if(gHit > -1)
-      {
-        gDragging = gHit -1;
-      }
       else
-      {
-        gDragging = -1;
+      {      
+        if(gHit > -1)
+        {
+          gDragging = gHit -1;
+        }
+        else
+        {
+          gDragging = -1;
+        }
       }
     }
-  }
-  else
-  {
-    gHit = -1;
-    gDragging = -1;
-  }
-    
+  } 
 }
 onclick.local = 1; 
 
@@ -286,6 +321,11 @@ function onidle(x,y,but,cmd,shift,capslock,option,ctrl)
   if(gDragging == -1)
   {
     gHit = hittest(x, y);
+    
+    if(gHit > -1)
+    {
+      mgraphics.redraw();
+    }
   }
 }
 onidle.local = 1;
@@ -296,6 +336,63 @@ function onidleout(x,y,but,cmd,shift,capslock,option,ctrl)
   gDragging = -1;
 }
 onidleout.local = 1;
+
+function nearestintersection(x, y)
+{
+  var xincr = 1./hsegs;
+  var yincr = 1./vsegs;
+
+  var hseg = Math.floor(x / xincr);
+  var vseg = Math.floor(y / yincr);
+  
+  var hfrac = (x - (hseg * xincr))/xincr;
+  var vfrac = (y - (vseg * yincr))/yincr;
+  
+  var gridx = 0.;
+  var gridy = 0.;
+    
+  if(hfrac >= 0.5)
+  {
+    gridx = (hseg + 1) * xincr;
+  }
+  else
+  {
+    gridx = hseg * xincr;
+  }
+  
+  if(vfrac >= 0.5)
+  {
+    gridy = (vseg + 1) * yincr;
+  }
+  else
+  {
+    gridy = vseg * yincr;
+  }
+  
+  return [gridx, gridy];
+}
+
+function getbounds()
+{
+  var left = 1.;
+  var top = 1.;
+  var right = 0.;
+  var bottom = 0.;
+  
+  var topy = 0;
+  
+  for(i = 0; i < gData.length; i++)
+  {
+    if(gData[i].x < left) left = gData[i].x;
+    if(gData[i].x > right) right = gData[i].x;
+    if(gData[i].y < top) top = gData[i].y;
+    if(gData[i].y > bottom) bottom = gData[i].y;
+    
+    if(gData[i].y > topy) topy = gData[i].y;
+  }
+  
+  return [left, topy, right-left, top-bottom];
+}
 
 function hittest(x, y)
 {
@@ -327,7 +424,7 @@ function onresize()
 	
 	mgraphics.redraw();
 }
-onresize.local = 1; //private
+onresize.local = 1;
 
 function getvalueof()
 {
